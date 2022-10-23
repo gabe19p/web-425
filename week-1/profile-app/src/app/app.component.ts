@@ -1,3 +1,11 @@
+/**
+ * Title: app.component.ts
+ * Author: Danial Purselley
+ * Date: 23 Oct 2022
+ * Description: root component file f/
+ *   web425 angular application
+ */
+
 import { Component } from '@angular/core';
 
 @Component({
