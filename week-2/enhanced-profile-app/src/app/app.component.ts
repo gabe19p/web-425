@@ -1,3 +1,11 @@
+/**
+ * Title: app.component.ts
+ * Author: Danial Purselley
+ * Date: 30 Oct 2022
+ * Description: basic profile angular
+ * application f/ web-425
+ */
+
 import { Component } from '@angular/core';
 
 @Component({

@@ -8,6 +8,7 @@
 
 import { Component, OnInit } from '@angular/core';
 
+// creating person class for myself
 export default class Person {
   fullName: string;
   favoriteFood: string;
@@ -20,6 +21,7 @@ export default class Person {
     this.favoriteColor = favoriteColor;
   }
 
+  // console out to verify person values
   toString() {
     console.log(
       `\n  Full name: ${this.fullName}\n  Favorite Food: ${this.favoriteFood}\n  Favorite Color: ${this.favoriteColor}`
@@ -35,6 +37,7 @@ export default class Person {
 export class MyDetailComponent implements OnInit {
   myProfile: Person;
 
+  // building person
   constructor() {
     this.myProfile = new Person('Danial Purselley', 'Ramen', 'Blue');
     this.myProfile.toString();
