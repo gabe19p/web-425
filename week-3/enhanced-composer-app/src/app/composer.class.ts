@@ -1,3 +1,11 @@
+/**
+ * Title: composer.class.ts
+ * Author: Danial Purselley
+ * Date: 1 Nov 2022
+ * Description: basic composer
+ * application for web-425
+ */
+
 // self made class to ensure composers follow format
 import { IComposer } from './composer.interface';
 

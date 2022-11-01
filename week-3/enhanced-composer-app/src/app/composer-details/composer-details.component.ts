@@ -1,3 +1,11 @@
+/**
+ * Title: composer-details.components.ts
+ * Author: Danial Purselley
+ * Date: 1 Nov 2022
+ * Description: basic composer
+ * application for web-425
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IComposer } from '../composer.interface';
