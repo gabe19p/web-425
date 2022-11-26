@@ -1,3 +1,11 @@
+/**
+ * Title: app.module.ts
+ * Author: Danial Purselley
+ * Date: 23 Nov 2022
+ * Description: Basic gpa calc
+ * app f/ web-425
+ */
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,6 +16,10 @@ import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 import { BaseLayoutComponent } from './base-layout/base-layout.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -15,14 +27,18 @@ import { HomeComponent } from './home/home.component';
     AuthLayoutComponent,
     BaseLayoutComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    FlexLayoutModule,
+    MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
