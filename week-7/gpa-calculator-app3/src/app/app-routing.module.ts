@@ -12,6 +12,8 @@ import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 import { BaseLayoutComponent } from './base-layout/base-layout.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignInGuard } from './sign-in.guard';
 
 const routes: Routes = [
   {
@@ -23,6 +25,7 @@ const routes: Routes = [
         component: HomeComponent,
       },
     ],
+    canActivate: [SignInGuard],
   },
   {
     path: 'session',
@@ -31,6 +34,10 @@ const routes: Routes = [
       {
         path: 'not-found',
         component: NotFoundComponent,
+      },
+      {
+        path: 'sign-in',
+        component: SignInComponent,
       },
     ],
   },
